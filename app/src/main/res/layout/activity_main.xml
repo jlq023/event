@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context="com.activity.MainActivity">
+
+    <com.activity.view.BossView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:padding="50dp"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"   android:text="我是老板" android:textSize="16sp" android:textColor="#ffffff" />
+        <com.activity.view.ManagerView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <Button android:id="@+id/eventId"
+                android:layout_width="100dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_height="50dp"
+                android:text="我是经理" />
+
+
+            <com.activity.view.EmployeesView
+                android:layout_width="100dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@color/myText"
+                 android:text="我是员工"
+                android:layout_height="100dp" />
+
+        </com.activity.view.ManagerView>
+
+
+
+    </com.activity.view.BossView>
+
+</android.support.constraint.ConstraintLayout>
